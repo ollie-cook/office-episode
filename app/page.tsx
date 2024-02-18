@@ -2,6 +2,8 @@ import { episodes } from "@/utils/episodes"
 import Episode from "./components/Episode"
 import RefreshButton from "./components/RefreshButton";
 
+export const dynamic = 'force-dynamic'
+
 export default function Home() {
   const episode = getRandomEpisode();
 
