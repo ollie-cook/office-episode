@@ -6,9 +6,12 @@ export default function Home() {
   const episode = getRandomEpisode();
 
   return (
-    <main className="min-h-screen">
-      <Episode episode={episode} />
+    <main className="relative min-h-screen flex flex-col items-center">
+      <img src="/logo.png" alt="The Office logo" className="w-1/3 mt-4" />
+      <h1 className="text-5xl mt-2 font-semibold">Random Episode Generator</h1>
       <RefreshButton />
+      <Episode episode={episode} />
+      <p className="absolute bottom-2 left-1/2 -translate-x-1/2 text-sm" >Built by <a href="https://www.olliecookie.com" className="underline" target="_blank">Ollie Cook</a>&#x1f36a;</p>
     </main>
   );
 }
